@@ -1,0 +1,82 @@
+.text {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/WhatsApp\ Image\ 2024-11-26\ at\ 6.40.55\ PM.jpeg);
+    background-position: center center;
+    background-size: cover;
+    height: 250px;
+
+}
+
+.home {
+    background-color: #EDEEF0;
+}
+
+.contant {
+    width: 50%;
+    background-color: #fff;
+    padding: 0;
+    box-shadow: 0 0  10px gray;
+
+}
+
+.text h1 {
+    color: #fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+    border: none !important;
+    border-bottom: 1px solid gray !important;
+}
+label{
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.form-control:focus {
+    border-color: gray;
+    box-shadow: 0 0 10px gray;
+}
+
+span {
+    transform: translate(150%);
+    font-family:'Times New Roman', Times, serif;
+}
+
+p a{
+    color:black  ;
+}
+
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+.groupBtn{
+    display: flex;
+    
+    justify-content:space-between;
+    align-items: center;
+}
+@media (max-width:768px){
+    .contant{
+        width: 90%;
+    }
+    h1{
+        font-size:24px
+    }
+    span{
+        transform: translate(10%);
+
+    }
+    button{
+        font-size: 16px;
+        display: block;
+        padding: 10px !important;
+        transform: translate(-100%);
+    }
+    .groupBtn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+}

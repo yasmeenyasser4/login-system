@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="vh-100 home">
+        <div">
+            <div class=" contant  m-auto  container position-absolute top-50 start-50 translate-middle ">
+                <div class="text d-flex justify-content-center align-items-center">
+                    <h1>Smart Login System</h1>
+                </div>
+
+                <form class="register-side p-4 d-block">
+
+                    <div class=" nameContain form-floating mb-3 d-block">
+                        <input onkeyup="validation(this)" type="name" class="form-control mt-2  " id="nameInput" placeholder="name@example.com">
+                        <label for="nameInput">User Name</label>
+                       
+                        <p class="textNameNotValid text-center text-success text-success d-none">Name not available</p>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <input oninput="validation(this)" type="email" class="form-control mt-2 " id="emailInput" placeholder="name@example.com">
+                        <label for="emailInput">User Email</label>
+                      </div>
+                        
+                      <div class="form-floating">
+                        <input oninput="validation(this)" type="password" class="form-control my-2" id="PasswordInput" placeholder="Password">
+                        <label for="PasswordInput">Password</label>
+                      </div>
+
+
+                      <p class="textSuccess text-center text-success  d-none">success</p>
+                      <p class="texterror text-center text-danger d-none">error in the email or password</p>
+
+                      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-2">
+                        <button class="btnSign  btn btn-success my-2 d-block "> Sign Up</button>
+
+                      <p >You already have account? <a class="anchorSignUp "  href="#">Sign in</a></p>
+                      </div>
+                </form>
+                <form class="login-side p-4 d-none">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control mt-2 " id="emailLoginInput" placeholder="name@example.com">
+                        <label for="emailLoginInput">User Email</label>
+                      </div>
+                        
+                      <div class="form-floating">
+                        <input  type="password" class="form-control my-2" id="PasswordLoginInput" placeholder="Password">
+                        <label for="PasswordLoginInput">Password</label>
+                      </div>
+
+
+                      <p class="text-success-login text-center text-success  d-none">success</p>
+                      <p class="text-error-login text-center text-danger d-none">error in the email or password</p>
+
+                      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-2">
+                        <button class="btnLogin  btn btn-success my-2 d-block "> Sign in</button>
+
+                      <p >Don't have an account? <a class="anchorSignIn "  href="#">Sign Up</a></p>
+                      </div>
+                </form>
+                
+            </div>
+    </div>
+    
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
+
